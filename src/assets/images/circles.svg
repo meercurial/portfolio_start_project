@@ -1,0 +1,42 @@
+<svg width="120.000000" height="76.000000" viewBox="0 0 120 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_4604">
+			<rect id="Frame 6" width="207.000000" height="15.000000" transform=" rotate(0.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip1_4610">
+			<rect id="Frame 7" width="207.000000" height="15.000000" transform="translate(0.000000 27.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip1_4616">
+			<rect id="Frame 8" width="207.000000" height="15.000000" transform="translate(0.000000 54.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip1_4603">
+			<rect id="circles" width="120.000000" height="76.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip1_4603)">
+		<g clip-path="url(#clip1_4604)">
+			<circle id="Ellipse 1" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 7.5 7.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 2" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 55.5 7.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 3" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 103.5 7.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 4" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 151.5 7.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 5" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 199.5 7.5)" fill="#E84949" fill-opacity="1.000000"/>
+		</g>
+		<g clip-path="url(#clip1_4610)">
+			<circle id="Ellipse 1" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 7.5 34.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 2" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 55.5 34.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 3" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 103.5 34.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 4" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 151.5 34.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 5" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 199.5 34.5)" fill="#E84949" fill-opacity="1.000000"/>
+		</g>
+		<g clip-path="url(#clip1_4616)">
+			<circle id="Ellipse 1" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 7.5 61.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 2" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 55.5 61.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 3" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 103.5 61.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 4" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 151.5 61.5)" fill="#E84949" fill-opacity="1.000000"/>
+			<circle id="Ellipse 5" r="7.500000" transform="matrix(1 5.55112e-17 -5.55112e-17 1 199.5 61.5)" fill="#E84949" fill-opacity="1.000000"/>
+		</g>
+	</g>
+</svg>
