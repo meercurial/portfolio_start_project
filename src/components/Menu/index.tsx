@@ -7,7 +7,19 @@ import { StyleLinkContainer } from '../styledComponents/StyledLinkContainer';
 
 export const Menu: React.FC = () => {
   return (
-    <StyledMenu display="flex" gap="30px" alignitems="center" justifyContent="space-between">
+    <StyledNavMenu
+      position="static"
+      width="350px"
+      height="26px"
+      display="flex"
+      flex-direction="row"
+      justifyContent="space-between"
+      alignItems="center"
+      padding="0px"
+      flex="none"
+      order="1"
+      flexGrow="0"
+      margin="0px 10px">
       <ul>
         {menuTitle.map((obj, i) => (
           <li key={i}>
@@ -39,25 +51,41 @@ export const Menu: React.FC = () => {
           </li>
         ))}
       </ul>
-    </StyledMenu>
+    </StyledNavMenu>
   );
 };
 
-interface IMenuStyle {
-  display: string;
-  gap: string;
+interface INavMenuStyle {
+  display?: string;
+  gap?: string;
   width?: string;
   height?: string;
-  alignitems?: string;
+  alignItems?: string;
   justifyContent?: string;
+  position?: string;
+  flexDirection?: string;
+  padding?: string;
+  flex?: string;
+  order?: string;
+  flexGrow?: string;
+  margin?: string;
 }
 
-const StyledMenu: any = styled.nav<IMenuStyle>`
+const StyledNavMenu: any = styled.nav<INavMenuStyle>`
   ul {
     display: ${({ display }) => display};
     gap: ${({ gap }) => gap};
-    align-items: ${({ alignitems }) => alignitems};
+    align-items: ${({ alignItems }) => alignItems};
     justify-content: ${({ justifyContent }) => justifyContent};
+    position: ${({ position }) => position};
+    width: ${({ width }) => width};
+    height: ${({ height }) => height};
+    flex-direction: ${({ flexDirection }) => flexDirection};
+    padding: ${({ padding }) => padding};
+    flex: ${({ flex }) => flex};
+    order: ${({ order }) => order};
+    flex-grow: ${({ flexGrow }) => flexGrow};
+    margin: ${({ margin }) => margin};
   }
 `;
 

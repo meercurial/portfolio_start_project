@@ -13,7 +13,7 @@ code {
 .App {
   /* Desktop version */
   position: relative;
-  width: 2560px;
+  width: 1920px;
   height: 1080px;
   background: rgb(247, 246, 251);
 }
