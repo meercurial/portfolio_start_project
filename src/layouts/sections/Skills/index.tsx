@@ -4,13 +4,36 @@ import { SectionTitle } from '../../../components/styledComponents/SectionTitle'
 import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
 import { skillData } from '../../../database/store';
 import { Skill } from './Skill';
-import { Icon } from '../../../components/Icon';
 
 export const Skills: React.FC = () => {
   return (
-    <StyledSkillsSection>
+    <StyledSkillsSection
+      position="absolute"
+      width="1235px"
+      height="473px"
+      left="103px"
+      right="102px"
+      top="712px"
+      bottom="1720px"
+      display="flex"
+      flexDirection="column"
+      justifyContent="flex-start"
+      alignItems="center"
+      padding="0px">
       <SectionTitle>Skills</SectionTitle>
-      <FlexWrapper wrap={'wrap'} justify={'space-between'}>
+      <FlexWrapper
+        position="static"
+        width="1235px"
+        height="414px"
+        display="flex"
+        flexDirection="row"
+        justifyContent="space-between"
+        alignItems="center"
+        padding="0px"
+        flex="none"
+        order="1"
+        flexGrow="0"
+        margin="30px 0px">
         {skillData.map((obj, index) => (
           <Skill key={index} iconId={obj.iconId} skillTitleText={obj.skillTitleText} />
         ))}
@@ -258,10 +281,31 @@ export const Skills: React.FC = () => {
 };
 
 interface IStyledSkillsSection {
-  
+  position?: string;
+  width?: string;
+  height?: string;
+  left?: string;
+  right?: string;
+  top?: string;
+  bottom?: string;
+  display?: string;
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  padding?: string;
 }
 
 const StyledSkillsSection: any = styled.section<IStyledSkillsSection>`
-  background-color: #ffe5e4;
-  min-height: 100vh;
+  position: ${({ position }) => position};
+  width: ${({ width }) => width};
+  height: ${({ height }) => height};
+  left: ${({ left }) => left};
+  right: ${({ right }) => right};
+  top: ${({ top }) => top};
+  bottom: ${({ bottom }) => bottom};
+  display: ${({ display }) => display};
+  flex-direction: ${({ flexDirection }) => flexDirection};
+  justify-content: ${({ justifyContent }) => justifyContent};
+  align-items: ${({ alignItems }) => alignItems};
+  padding: ${({ padding }) => padding};
 `;
