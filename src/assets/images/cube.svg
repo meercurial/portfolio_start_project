@@ -1,10 +1,7 @@
 <svg width="40.532440" height="40.532471" viewBox="0 0 40.5324 40.5325" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
 	<defs/>
 	<path id="Polygon 1" d="M2.71 10.13L2.71 30.39L20.26 40.53L37.81 30.39L37.81 10.13L20.26 0L2.71 10.13ZM5.71 11.86L5.71 28.66L20.26 37.06L34.81 28.66L34.81 11.86L20.26 3.46L5.71 11.86Z" fill="#4F47C8" fill-opacity="1.000000" fill-rule="evenodd"/>
-	<line id="Line 4" x1="4.481689" y1="9.670410" x2="21.459106" y2="19.324463" stroke="#4F47C8" stroke-opacity="1.000000" stroke-width="3.000000"/>
-	<line id="Line 5" x1="21.163940" y1="19.425415" x2="21.565247" y2="39.691650" stroke="#4F47C8" stroke-opacity="1.000000" stroke-width="3.000000"/>
-	<line id="Line 6" x1="19.495117" y1="19.676147" x2="36.894012" y2="9.628296" stroke="#4F47C8" stroke-opacity="1.000000" stroke-width="3.000000"/>
+	<line id="Line 4" x1="4.481689" y1="9.670410" x2="21.459106" y2="19.324463" stroke="#4F47C8" strokeOpacity="1.000000" strokeWidth="3.000000"/>
+	<line id="Line 5" x1="21.163940" y1="19.425415" x2="21.565247" y2="39.691650" stroke="#4F47C8" strokeOpacity="1.000000" strokeWidth="3.000000"/>
+	<line id="Line 6" x1="19.495117" y1="19.676147" x2="36.894012" y2="9.628296" stroke="#4F47C8" strokeOpacity="1.000000" strokeWidth="3.000000"/>
 </svg>

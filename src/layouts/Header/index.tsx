@@ -1,13 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Logo } from '../../components/Logo';
 import { Menu } from '../../components/Menu';
+import styled from 'styled-components';
 
-  export const Header: React.FC = () => {
-  return ( 
+export const Header: React.FC = () => {
+  return (
     <StyledHeader>
       <Logo />
-       <Menu />
+      <Menu />
     </StyledHeader>
   );
 };

@@ -1,16 +1,31 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
-type FlexWrapperPropsType = {
-    direction?: string
-    justify?: string
-    align?: string
-    wrap?: string
-} 
+interface IFlexWrapper {
+  position?: string;
+  width?: string;
+  height?: string;
+  display?: string;
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  padding?: string;
+  flex?: string;
+  order?: string;
+  flexGrow?: string;
+  margin?: string;
+}
 
-export const FlexWrapper: any = styled.div<FlexWrapperPropsType>`
-    display: flex;
-    flex-direction: ${props => props.direction || "row"};
-    justify-content: ${props => props.justify || "flex-start"};
-    align-items: ${props => props.align || "stretch"};
-    flex-wrap: ${props => props.wrap || "nowrap"};
-`
+export const FlexWrapper: any = styled.div<IFlexWrapper>`
+  justify-content: ${({ justifyContent }) => justifyContent};
+  align-items: ${({ alignItems }) => alignItems};
+  position: ${({ position }) => position};
+  width: ${({ width }) => width};
+  height: ${({ height }) => height};
+  display: ${({ display }) => display};
+  flex-direction: ${({ flexDirection }) => flexDirection};
+  padding: ${({ padding }) => padding};
+  flex: ${({ flex }) => flex};
+  order: ${({ order }) => order};
+  flex-grow: ${({ flexGrow }) => flexGrow};
+  margin: ${({ margin }) => margin};
+`;
