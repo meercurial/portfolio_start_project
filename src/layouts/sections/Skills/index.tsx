@@ -8,7 +8,7 @@ import { Icon } from '../../../components/Icon';
 
 export const Skills: React.FC = () => {
   return (
-    <StyledSkills>
+    <StyledSkillsSection>
       <SectionTitle>Skills</SectionTitle>
       <FlexWrapper wrap={'wrap'} justify={'space-between'}>
         {skillData.map((obj, index) => (
@@ -253,11 +253,15 @@ export const Skills: React.FC = () => {
           </g>
         </svg>
       </FlexWrapper>
-    </StyledSkills>
+    </StyledSkillsSection>
   );
 };
 
-const StyledSkills: any = styled.section`
+interface IStyledSkillsSection {
+  
+}
+
+const StyledSkillsSection: any = styled.section<IStyledSkillsSection>`
   background-color: #ffe5e4;
   min-height: 100vh;
 `;
