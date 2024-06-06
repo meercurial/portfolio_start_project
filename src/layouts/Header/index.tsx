@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
   return (
     <StyledHeader>
       <Container>
-        <FlexWrapper  justifyContent="space-between" textAlign="center">
+        <FlexWrapper justifyContent="space-between" textAlign="center" padding="24px 100px">
           <Logo />
           <Menu />
         </FlexWrapper>

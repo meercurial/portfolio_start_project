@@ -1,32 +1,74 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../../../components/Icon';
-import { SkillTitle } from '..';
+import { skillData } from '../../../../database/store';
 
-type SkillPropsType = {
-  iconId: string;
-  skillTitleText: string;
-  viewBox?: string;
-  width?: string;
-  height?: string;
-};
-
-export const Skill: React.FC<SkillPropsType> = ({
-  iconId,
-  skillTitleText,
-  width,
-  height,
-  viewBox,
-}) => {
+export const Skill: React.FC = () => {
   return (
-    <StyledSkillsWrapper>
-      <StyledCardIconContainer>
-        <Icon iconId={iconId} width={width} height={height} viewBox={viewBox} />
-        <SkillTitle>{skillTitleText}</SkillTitle>
-      </StyledCardIconContainer>
-    </StyledSkillsWrapper>
+    <SkillsContainer>
+      <h3>I have a vast experience in the following web technologies:</h3>
+      {skillData.map((obj, index) => (
+        <SkillsContainer>
+          <Icon
+            key={index}
+            iconId={obj.iconId}
+            width={obj.width}
+            height={obj.height}
+            viewBox={obj.viewBox}
+          />
+          <SkillTitleText>{obj.skillTitleText}</SkillTitleText>
+        </SkillsContainer>
+      ))}
+    </SkillsContainer>
   );
 };
+
+interface ISkillTitleText {
+  position?: string;
+  width?: string;
+  height?: string;
+  display?: string;
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  padding?: string;
+  flex?: string;
+  order?: string;
+  flexGrow?: string;
+  margin?: string;
+  color?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  lineHeight?: string;
+  letterSpacing?: string;
+  textAlign?: string;
+}
+
+export const SkillTitleText: any = styled.h3<ISkillTitleText>``;
+
+interface ISkillsContainer {
+  position?: string;
+  width?: string;
+  height?: string;
+  display?: string;
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  padding?: string;
+  flex?: string;
+  order?: string;
+  flexGrow?: string;
+  margin?: string;
+}
+
+const SkillsContainer: any = styled.div<ISkillsContainer>`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 42px;
+`;
 
 interface IStyledCardIconContainer {
   position?: string;
@@ -58,7 +100,7 @@ const StyledCardIconContainer = styled.div<IStyledCardIconContainer>`
   margin: ${({ margin }) => margin};
 `;
 
-interface IStyledSkillsWrapper {
+interface IStyledSkillWrapper {
   position?: string;
   width?: string;
   height?: string;
@@ -73,7 +115,7 @@ interface IStyledSkillsWrapper {
   margin?: string;
 }
 
-const StyledSkillsWrapper: any = styled.div<IStyledSkillsWrapper>`
+const StyledSkillWrapper: any = styled.div<IStyledSkillWrapper>`
   position: ${({ position }) => position};
   width: ${({ width }) => width};
   height: ${({ height }) => height};

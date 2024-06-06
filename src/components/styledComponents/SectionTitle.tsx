@@ -1,26 +1,28 @@
 import styled from 'styled-components';
 
 interface ISectionTitle {
-  color: string;
-  textAlign: string;
-  position: string;
-  width: string;
-  height: string;
-  display: string;
-  flexDirection: string;
-  justifyContent: string;
-  alignItems: string;
-  padding: string;
-  flex: string;
-  order: string;
-  flexGrow: string;
-  margin: string;
-  fontFamily: string;
-  fontSize: string;
-  fontWeight: string;
-  fontHeight: string;
-  lineHeight: string;
-  letterSpacing: string;
+  color?: string;
+  textAlign?: string;
+  position?: string;
+  width?: string;
+  height?: string;
+  display?: string;
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  padding?: string;
+  flex?: string;
+  order?: string;
+  flexGrow?: string;
+  margin?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  fontHeight?: string;
+  lineHeight?: string;
+  letterSpacing?: string;
+  marginLeft?: string;
+  marginRight?: string;
 }
 
 export const SectionTitle: any = styled.h2<ISectionTitle>`
@@ -43,4 +45,6 @@ export const SectionTitle: any = styled.h2<ISectionTitle>`
   font-weight: ${({ fontWeight }) => fontWeight};
   line-height: ${({ lineHeight }) => lineHeight};
   letter-spacing: ${({ letterSpacing }) => letterSpacing};
+  margin-left: ${({ marginLeft }) => marginLeft};
+  margin-right: ${({ marginRight }) => marginRight};
 `;

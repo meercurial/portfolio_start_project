@@ -30,4 +30,11 @@ body {
     border: none;
  }
 
+ header {
+   background-color: ${theme.colors.headerBg}
+ }
+
+ main {
+   background-color: ${theme.colors.mainBg}
+ }
 `;
