@@ -7,36 +7,22 @@ import { Skill } from './Skill';
 
 export const Skills: React.FC = () => {
   return (
-    <StyledSkillsSection
-      position="absolute"
-      width="1235px"
-      height="473px"
-      left="103px"
-      right="102px"
-      top="712px"
-      bottom="1720px"
-      display="flex"
-      flexDirection="column"
-      justifyContent="flex-start"
-      alignItems="center"
-      padding="0px">
+    <StyledSkillsSection>
       <SectionTitle>Skills</SectionTitle>
-      <FlexWrapper
-        position="static"
-        width="1235px"
-        height="414px"
-        display="flex"
-        flexDirection="row"
-        justifyContent="space-between"
-        alignItems="center"
-        padding="0px"
-        flex="none"
-        order="1"
-        flexGrow="0"
-        margin="30px 0px">
+      <FlexWrapper>
+        <SkillContainer />
+        <SkillTitle>I have a vast experience in the following web technologies:</SkillTitle>
         {skillData.map((obj, index) => (
-          <Skill key={index} iconId={obj.iconId} skillTitleText={obj.skillTitleText} />
+          <Skill
+            key={index}
+            iconId={obj.iconId}
+            skillTitleText={obj.skillTitleText}
+            width={obj.width}
+            height={obj.height}
+            viewBox={obj.viewBox}
+          />
         ))}
+        <SkillContainer />
         <svg
           width="511.000000"
           height="414.000000"
@@ -280,6 +266,47 @@ export const Skills: React.FC = () => {
   );
 };
 
+interface ISkillTitle {
+  position?: string;
+  width?: string;
+  height?: string;
+  display?: string;
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  padding?: string;
+  flex?: string;
+  order?: string;
+  flexGrow?: string;
+  margin?: string;
+  color?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  lineHeight?: string;
+  letterSpacing?: string;
+  textAlign?: string;
+}
+
+export const SkillTitle: any = styled.h3<ISkillTitle>``;
+
+interface ISkillContainer {
+  position?: string;
+  width?: string;
+  height?: string;
+  display?: string;
+  flexDirection?: string;
+  justifyContent?: string;
+  alignItems?: string;
+  padding?: string;
+  flex?: string;
+  order?: string;
+  flexGrow?: string;
+  margin?: string;
+}
+
+const SkillContainer: any = styled.div<ISkillContainer>``;
+
 interface IStyledSkillsSection {
   position?: string;
   width?: string;
@@ -295,17 +322,4 @@ interface IStyledSkillsSection {
   padding?: string;
 }
 
-const StyledSkillsSection: any = styled.section<IStyledSkillsSection>`
-  position: ${({ position }) => position};
-  width: ${({ width }) => width};
-  height: ${({ height }) => height};
-  left: ${({ left }) => left};
-  right: ${({ right }) => right};
-  top: ${({ top }) => top};
-  bottom: ${({ bottom }) => bottom};
-  display: ${({ display }) => display};
-  flex-direction: ${({ flexDirection }) => flexDirection};
-  justify-content: ${({ justifyContent }) => justifyContent};
-  align-items: ${({ alignItems }) => alignItems};
-  padding: ${({ padding }) => padding};
-`;
+const StyledSkillsSection: any = styled.section<IStyledSkillsSection>``;

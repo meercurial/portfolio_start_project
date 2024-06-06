@@ -9,12 +9,4 @@ export const Footer: React.FC = () => {
 
 const StyledFooterContainer: any = styled.footer`
   background-image: url(${bg_wave_top});
-  /* bg wave svg */
-  position: absolute;
-  width: 1440px;
-  height: 250.5px;
-  left: 0;
-  right: 0;
-  top: 2474px;
-  bottom: -2280.5px;
 `;

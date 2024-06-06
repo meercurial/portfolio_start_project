@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 interface IFlexWrapper {
-  position?: string;
   width?: string;
   height?: string;
   display?: string;
@@ -18,10 +17,9 @@ interface IFlexWrapper {
 export const FlexWrapper: any = styled.div<IFlexWrapper>`
   justify-content: ${({ justifyContent }) => justifyContent};
   align-items: ${({ alignItems }) => alignItems};
-  position: ${({ position }) => position};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
-  display: ${({ display }) => display};
+  display: flex;
   flex-direction: ${({ flexDirection }) => flexDirection};
   padding: ${({ padding }) => padding};
   flex: ${({ flex }) => flex};

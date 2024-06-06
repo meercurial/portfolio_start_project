@@ -6,41 +6,8 @@ import { SectionTitle } from '../../../components/styledComponents/SectionTitle'
 export const ContactMe: React.FC = () => {
   return (
     <StyledContactMeSection>
-      <SectionTitle
-        position="static"
-        width="113px"
-        height="29px"
-        display="flex"
-        flexDirection="column"
-        justifyContent="flex-start"
-        alignItems="center"
-        padding="0px"
-        flex="none"
-        order="0"
-        flexGrow="0"
-        margin="30px 0px"
-        color="rgb(232, 73, 73)"
-        fontFamily="Be Vietnam"
-        fontSize="20px"
-        fontWeight="500"
-        lineHeight="29px"
-        letterSpacing="0%"
-        textAlign="left">
-        Contact me
-      </SectionTitle>
-      <FlexWrapper
-        position="static"
-        width="1241px"
-        height="412px"
-        display="flex"
-        flexDirection="row"
-        justifyContent="flex-start"
-        alignItems="center"
-        padding="0px"
-        flex="none"
-        order="1"
-        flexGrow="0"
-        margin="30px 0px">
+      <SectionTitle>Contact me</SectionTitle>
+      <FlexWrapper>
         <svg
           width="563.000000"
           height="412.000000"
@@ -397,24 +364,7 @@ const StyledContactMeSection: any = styled.section<IStyledContactMeSection>`
   height: ${({ height }) => height};
 `;
 
-const StyledForm: any = styled.form`
-  /* form */
-  position: static;
-  width: 613px;
-  height: 347px;
-  /* Автолейаут */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 65px;
-`;
+const StyledForm: any = styled.form``;
 
 interface IStyledInput {
   position?: string;

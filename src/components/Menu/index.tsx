@@ -7,35 +7,11 @@ import { StyleLinkContainer } from '../styledComponents/StyledLinkContainer';
 
 export const Menu: React.FC = () => {
   return (
-    <StyledNavMenu
-      position="static"
-      width="350px"
-      height="26px"
-      display="flex"
-      flex-direction="row"
-      justifyContent="space-between"
-      alignItems="center"
-      padding="0px"
-      flex="none"
-      order="1"
-      flexGrow="0"
-      margin="0px 10px">
+    <StyledNavMenu>
       <ul>
         {menuTitle.map((obj, i) => (
           <li key={i}>
-            <StyleLinkContainer
-              position={obj.position}
-              width={obj.width}
-              height={obj.height}
-              display={obj.display}
-              flexdirection={obj.flexdirection}
-              justifycontent={obj.justifycontent}
-              alignitems={obj.alignitems}
-              padding={obj.padding}
-              flex={obj.flex}
-              order={obj.order}
-              flexgrow={obj.flexgrow}
-              margin={obj.margin}>
+            <StyleLinkContainer>
               <StyledLink to="">
                 {obj.iconId && (
                   <Icon
@@ -73,19 +49,8 @@ interface INavMenuStyle {
 
 const StyledNavMenu: any = styled.nav<INavMenuStyle>`
   ul {
-    display: ${({ display }) => display};
-    gap: ${({ gap }) => gap};
-    align-items: ${({ alignItems }) => alignItems};
-    justify-content: ${({ justifyContent }) => justifyContent};
-    position: ${({ position }) => position};
-    width: ${({ width }) => width};
-    height: ${({ height }) => height};
-    flex-direction: ${({ flexDirection }) => flexDirection};
-    padding: ${({ padding }) => padding};
-    flex: ${({ flex }) => flex};
-    order: ${({ order }) => order};
-    flex-grow: ${({ flexGrow }) => flexGrow};
-    margin: ${({ margin }) => margin};
+    display: flex;
+    gap: 20px;
   }
 `;
 
