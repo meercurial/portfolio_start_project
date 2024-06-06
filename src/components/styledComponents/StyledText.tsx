@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-interface IStyledBtn {
+interface IStyledText {
   position?: string;
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
   display?: string;
   flexDirection?: string;
   justifyContent?: string;
@@ -13,13 +13,16 @@ interface IStyledBtn {
   order?: string;
   flexGrow?: string;
   margin?: string;
-  borderRadius?: string;
-  boxShadow?: string;
-  background?: string;
-  border?: string;
+  color?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  fontWeight?: string;
+  lineHeight?: string;
+  letterSpacing?: string;
+  textAlign?: string;
 }
 
-export const StyledBtn: any = styled.button<IStyledBtn>`
+export const StyledText: any = styled.span<IStyledText>`
   position: ${({ position }) => position};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
@@ -32,8 +35,11 @@ export const StyledBtn: any = styled.button<IStyledBtn>`
   order: ${({ order }) => order};
   flex-grow: ${({ flexGrow }) => flexGrow};
   margin: ${({ margin }) => margin};
-  border-radius: ${({ borderRadius }) => borderRadius};
-  box-shadow: ${({ boxShadow }) => boxShadow};
-  background: ${({ background }) => background};
-  border: ${({ border }) => border};
+  color: ${({ color }) => color};
+  font-family: ${({ fontFamily }) => fontFamily};
+  font-size: ${({ fontSize }) => fontSize};
+  font-weight: ${({ fontWeight }) => fontWeight};
+  line-height: ${({ lineHeight }) => lineHeight};
+  letter-spacing: ${({ letterSpacing }) => letterSpacing};
+  text-align: ${({ textAlign }) => textAlign};
 `;

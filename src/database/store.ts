@@ -60,3 +60,27 @@ export const menuTitle: menuTitleType[] = [
     menuTitleText: 'Contact me',
   },
 ];
+
+export type projectDataType = {
+  src: string;
+  alt: string;
+  projectText: string;
+};
+
+export const projectData: projectDataType[] = [
+  {
+    src: '../assets/images/projects_img/project_one.png',
+    alt: 'project one image',
+    projectText: 'Made a social media manager template using HTML 5, CSS and JS',
+  },
+  {
+    src: '../assets/images/projects_img/project_two.png',
+    alt: 'project two image',
+    projectText: 'Made a simple card page using HTML 5 and CSS 3',
+  },
+  {
+    src: '../assets/images/projects_img/project_three.png',
+    alt: 'project three image',
+    projectText: 'Made an I.P address tracking website.',
+  },
+];
