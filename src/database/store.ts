@@ -2,7 +2,7 @@ import project_one from '../assets/images/projects_img/project_one.png';
 import project_two from '../assets/images/projects_img/project_two.png';
 import project_three from '../assets/images/projects_img/project_three.png';
 
-type skillDataType = {
+export type skillDataType = {
   iconId: string;
   skillTitleText: string;
   width?: string;

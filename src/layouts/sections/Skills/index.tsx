@@ -4,6 +4,7 @@ import { SectionTitle } from '../../../components/styledComponents/SectionTitle'
 import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
 import { Skill } from './Skill';
 import { Container } from '../../../components/styledComponents/Container';
+import { skillData, skillDataType } from '../../../database/store';
 
 export const Skills: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ export const Skills: React.FC = () => {
           Skills
         </SectionTitle>
         <FlexWrapper justifyContent="space-between">
-          <Skill />
+          <Skill skillData={skillData as skillDataType[]} />
           <svg
             width="511.000000"
             height="414.000000"

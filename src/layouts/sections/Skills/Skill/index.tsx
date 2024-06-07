@@ -1,31 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../../../components/Icon';
-import { skillData } from '../../../../database/store';
+import { FlexWrapper } from '../../../../components/styledComponents/FlexWrapper';
 
-export const Skill: React.FC = () => {
+interface ISkillProps {
+  skillData: Array<{
+    iconId: string;
+    width?: string;
+    height?: string;
+    viewBox?: string;
+    skillTitleText: string;
+  }>;
+}
+
+export const Skill: React.FC<ISkillProps> = ({ skillData }) => {
   return (
     <SkillsContainer>
       <SkillTitle>I have a vast experience in the following web technologies:</SkillTitle>
-      {skillData.map((obj, index) => (
-        <SkillsContainer>
-          <Icon
-            key={index}
-            iconId={obj.iconId}
-            width={obj.width}
-            height={obj.height}
-            viewBox={obj.viewBox}
-          />
-          <SkillText>{obj.skillTitleText}</SkillText>
-        </SkillsContainer>
-      ))}
+      {skillData.map((obj, index) => {
+        return (
+          <FlexWrapper key={index} flexDirection="row">
+            <Icon iconId={obj.iconId} width={obj.width} height={obj.height} viewBox={obj.viewBox} />
+            <SkillText>{obj.skillTitleText}</SkillText>
+          </FlexWrapper>
+        );
+      })}
     </SkillsContainer>
   );
 };
 
-const SkillTitle: any = styled.span`
-display
-`;
+const SkillTitle: any = styled.span``;
 
 interface ISkillText {
   position?: string;
@@ -66,11 +70,7 @@ interface ISkillsContainer {
   margin?: string;
 }
 
-const SkillsContainer: any = styled.div<ISkillsContainer>`
-  display: flex;
-  flex-direction: row;
-  gap: 42px;
-`;
+const SkillsContainer: any = styled.div<ISkillsContainer>``;
 
 interface IStyledSkillWrapper {
   position?: string;
