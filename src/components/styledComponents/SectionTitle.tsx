@@ -23,6 +23,7 @@ interface ISectionTitle {
   letterSpacing?: string;
   marginLeft?: string;
   marginRight?: string;
+  gap?: string;
 }
 
 export const SectionTitle: any = styled.h2<ISectionTitle>`
@@ -47,4 +48,5 @@ export const SectionTitle: any = styled.h2<ISectionTitle>`
   letter-spacing: ${({ letterSpacing }) => letterSpacing};
   margin-left: ${({ marginLeft }) => marginLeft};
   margin-right: ${({ marginRight }) => marginRight};
+  gap: ${({ gap }) => gap};
 `;

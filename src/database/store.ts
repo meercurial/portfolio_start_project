@@ -1,3 +1,7 @@
+import project_one from '../assets/images/projects_img/project_one.png';
+import project_two from '../assets/images/projects_img/project_two.png';
+import project_three from '../assets/images/projects_img/project_three.png';
+
 type skillDataType = {
   iconId: string;
   skillTitleText: string;
@@ -69,17 +73,17 @@ export type projectDataType = {
 
 export const projectData: projectDataType[] = [
   {
-    src: '../assets/images/projects_img/project_one.png',
+    src: project_one,
     alt: 'project one image',
     projectText: 'Made a social media manager template using HTML 5, CSS and JS',
   },
   {
-    src: '../assets/images/projects_img/project_two.png',
+    src: project_two,
     alt: 'project two image',
     projectText: 'Made a simple card page using HTML 5 and CSS 3',
   },
   {
-    src: '../assets/images/projects_img/project_three.png',
+    src: project_three,
     alt: 'project three image',
     projectText: 'Made an I.P address tracking website.',
   },

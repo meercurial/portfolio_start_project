@@ -12,6 +12,8 @@ interface IFlexWrapper {
   order?: string;
   flexGrow?: string;
   margin?: string;
+  gap?: string;
+  border?: string;
 }
 
 export const FlexWrapper: any = styled.div<IFlexWrapper>`
@@ -26,4 +28,6 @@ export const FlexWrapper: any = styled.div<IFlexWrapper>`
   order: ${({ order }) => order};
   flex-grow: ${({ flexGrow }) => flexGrow};
   margin: ${({ margin }) => margin};
+  gap: ${({ gap }) => gap};
+  border: ${({ border }) => border};
 `;

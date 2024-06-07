@@ -10,13 +10,19 @@ interface IProjectCardProps {
 
 export const ProjectCard: React.FC<IProjectCardProps> = ({ projectData }) => {
   return (
-    <FlexWrapper>
+    <FlexWrapper gap="58px" padding="117px 100px 40px" justifyContent="center">
       {projectData.map((obj, i) => {
         return (
-          <ProjectWrapper key={i}>
+          <ProjectCardContainer>
             <Image src={obj.src} alt={obj.alt} />
             <p>{obj.projectText}</p>
             <StyledBtn
+              display="flex"
+              flex-direction="row"
+              padding="0px 125px"
+              justifyContent="center"
+              alignItems="center"
+              pading="0px 125px 12px"
               width="131px"
               height="42px"
               border="2px solid rgb(255, 255, 255)"
@@ -24,11 +30,20 @@ export const ProjectCard: React.FC<IProjectCardProps> = ({ projectData }) => {
               background="rgba(52, 61, 104, 0.08)">
               Learn more
             </StyledBtn>
-          </ProjectWrapper>
+          </ProjectCardContainer>
         );
       })}
     </FlexWrapper>
   );
 };
 
-const ProjectWrapper: any = styled.div``;
+const ProjectCardContainer: any = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 12px 0px;
+  width: 381px;
+  height: 434px;
+  border: 1px solid red;
+`;
