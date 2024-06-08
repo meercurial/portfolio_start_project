@@ -15,24 +15,19 @@ interface ISkillProps {
 
 export const Skill: React.FC<ISkillProps> = ({ skillData }) => {
   return (
-    <SkillsContainer>
-      <SkillTitle>I have a vast experience in the following web technologies:</SkillTitle>
+    <FlexWrapper>
       {skillData.map((obj, index) => {
         return (
-          <FlexWrapper key={index}>
+          <SkillsContainer key={index}>
             <Icon iconId={obj.iconId} width={obj.width} height={obj.height} viewBox={obj.viewBox} />
             <SkillText>{obj.skillTitleText}</SkillText>
-          </FlexWrapper>
+          </SkillsContainer>
         );
       })}
-    </SkillsContainer>
+    </FlexWrapper>
   );
 };
 
-const SkillTitle: any = styled.span`
-  width: 510px;
-  height: 30px;
-`;
 
 interface ISkillText {
   position?: string;
@@ -73,7 +68,16 @@ interface ISkillsContainer {
   margin?: string;
 }
 
-const SkillsContainer: any = styled.div<ISkillsContainer>``;
+const SkillsContainer: any = styled.div<ISkillsContainer>`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 12px 0px;
+  width: 75px;
+  height: 102px;
+  border: 1px solid red;
+`;
 
 interface IStyledSkillWrapper {
   position?: string;

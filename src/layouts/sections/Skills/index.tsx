@@ -13,6 +13,7 @@ export const Skills: React.FC = () => {
         <SectionTitle display="flex" justifyContent="center">
           Skills
         </SectionTitle>
+        <SkillTitle>I have a vast experience in the following web technologies:</SkillTitle>
         <FlexWrapper justifyContent="space-between">
           <Skill skillData={skillData as skillDataType[]} />
           <svg
@@ -258,6 +259,11 @@ export const Skills: React.FC = () => {
     </StyledSkillsSection>
   );
 };
+
+const SkillTitle: any = styled.span`
+  width: 510px;
+  height: 30px;
+`;
 
 interface IStyledSkillsSection {
   position?: string;
