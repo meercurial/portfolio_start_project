@@ -261,8 +261,13 @@ export const Skills: React.FC = () => {
 };
 
 const SkillTitle: any = styled.span`
-  width: 510px;
-  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  margin-top: 120px;
+  margin-bottom: 50px;
 `;
 
 interface IStyledSkillsSection {

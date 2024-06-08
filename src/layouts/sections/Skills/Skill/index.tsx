@@ -28,7 +28,6 @@ export const Skill: React.FC<ISkillProps> = ({ skillData }) => {
   );
 };
 
-
 interface ISkillText {
   position?: string;
   width?: string;
@@ -77,6 +76,7 @@ const SkillsContainer: any = styled.div<ISkillsContainer>`
   width: 75px;
   height: 102px;
   border: 1px solid red;
+  margin-right: 45px;
 `;
 
 interface IStyledSkillWrapper {
