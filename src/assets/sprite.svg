@@ -55,23 +55,92 @@
 		<path id="Vector" d="M301.88 296.92C301.13 294.68 291.68 287.05 297.47 285.77L302.22 292.15L324.05 270.14L326.25 272.35L301.88 296.92Z" fill="#4F47C8" fillOpacity="1.000000" fillRule="nonzero"/>
 	</g>
 </symbol>
-<symbol id="css-icon" width="43.695679" height="43.695679" viewBox="0 0 43.6957 43.6957" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="HTML5-icon" width="43.695679" height="43.695679" viewBox="0 0 43.6957 43.6957" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<desc>
 			Created with Pixso.
 	</desc>
 	<defs>
 		<clipPath id="clip1_4700">
-			<rect id="html-5-logo-svgrepo-com 1" width="43.695652" height="43.695652" fill="white" fill-opacity="0"/>
+			<rect id="html-5-logo-svgrepoCom 1" width="43.695652" height="43.695652" fill="white" fillOpacity="0"/>
 		</clipPath>
 	</defs>
 	<g clip-path="url(#clip1_4700)">
-		<path id="Vector" d="M37.28 8.56L34.47 40.07L21.82 43.58L9.21 40.08L6.4 8.56L37.28 8.56Z" fill="#E44D26" fill-opacity="1.000000" fill-rule="nonzero"/>
-		<path id="Vector" d="M21.84 40.9L32.06 38.07L34.46 11.14L21.84 11.14L21.84 40.9Z" fill="#F16529" fill-opacity="1.000000" fill-rule="nonzero"/>
-		<path id="Vector" d="M16.37 18.87L21.84 18.87L21.84 15L12.15 15L12.24 16.04L13.19 26.69L21.84 26.69L21.84 22.83L16.73 22.83L16.37 18.87ZM17.25 28.63L13.36 28.63L13.91 34.7L21.83 36.89L21.84 36.89L21.84 32.87L21.83 32.87L17.52 31.71L17.25 28.63Z" fill="#EBEBEB" fill-opacity="1.000000" fill-rule="nonzero"/>
-		<path id="Vector" d="M9.28 0L11.24 0L11.24 1.94L13.04 1.94L13.04 0L15 0L15 5.87L13.04 5.87L13.04 3.9L11.24 3.9L11.24 5.87L9.28 5.87L9.28 0L9.28 0ZM17.59 1.94L15.86 1.94L15.86 0L21.28 0L21.28 1.94L19.55 1.94L19.55 5.87L17.59 5.87L17.59 1.94L17.59 1.94L17.59 1.94ZM22.14 0L24.19 0L25.45 2.06L26.71 0L28.76 0L28.76 5.87L26.8 5.87L26.8 2.96L25.45 5.05L25.42 5.05L24.06 2.96L24.06 5.87L22.14 5.87L22.14 0ZM29.74 0L31.7 0L31.7 3.93L34.46 3.93L34.46 5.87L29.74 5.87L29.74 0L29.74 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-		<path id="Vector" d="M21.83 26.69L26.59 26.69L26.14 31.71L21.83 32.87L21.83 36.89L29.75 34.7L29.81 34.04L30.72 23.87L30.82 22.83L21.83 22.83L21.83 26.69ZM21.83 18.86L21.83 18.87L31.17 18.87L31.24 18L31.42 16.04L31.51 15L21.83 15L21.83 18.86L21.83 18.86Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M37.28 8.56L34.47 40.07L21.82 43.58L9.21 40.08L6.4 8.56L37.28 8.56Z" fill="#E44D26" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M21.84 40.9L32.06 38.07L34.46 11.14L21.84 11.14L21.84 40.9Z" fill="#F16529" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16.37 18.87L21.84 18.87L21.84 15L12.15 15L12.24 16.04L13.19 26.69L21.84 26.69L21.84 22.83L16.73 22.83L16.37 18.87ZM17.25 28.63L13.36 28.63L13.91 34.7L21.83 36.89L21.84 36.89L21.84 32.87L21.83 32.87L17.52 31.71L17.25 28.63Z" fill="#EBEBEB" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M9.28 0L11.24 0L11.24 1.94L13.04 1.94L13.04 0L15 0L15 5.87L13.04 5.87L13.04 3.9L11.24 3.9L11.24 5.87L9.28 5.87L9.28 0L9.28 0ZM17.59 1.94L15.86 1.94L15.86 0L21.28 0L21.28 1.94L19.55 1.94L19.55 5.87L17.59 5.87L17.59 1.94L17.59 1.94L17.59 1.94ZM22.14 0L24.19 0L25.45 2.06L26.71 0L28.76 0L28.76 5.87L26.8 5.87L26.8 2.96L25.45 5.05L25.42 5.05L24.06 2.96L24.06 5.87L22.14 5.87L22.14 0ZM29.74 0L31.7 0L31.7 3.93L34.46 3.93L34.46 5.87L29.74 5.87L29.74 0L29.74 0Z" fill="#000000" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M21.83 26.69L26.59 26.69L26.14 31.71L21.83 32.87L21.83 36.89L29.75 34.7L29.81 34.04L30.72 23.87L30.82 22.83L21.83 22.83L21.83 26.69ZM21.83 18.86L21.83 18.87L31.17 18.87L31.24 18L31.42 16.04L31.51 15L21.83 15L21.83 18.86L21.83 18.86Z" fill="#FFFFFF" fillOpacity="1.000000" fill-rule="nonzero"/>
 	</g>
 </symbol>
+
+<symbol id="css-icon" width="52.173889" height="52.173889" viewBox="0 0 52.1739 52.1739" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_4709">
+			<rect id="css3-logo-svgrepoCom 1" width="52.173912" height="52.173912" fill="white" fillOpacity="0"/>
+		</clipPath>
+		<linearGradient x1="21.352781" y1="31.043547" x2="21.352781" y2="23.216162" id="paint_linear_1_4715_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.387000" stopColor="#D1D3D4" stopOpacity="0.000000"/>
+			<stop offset="1.000000" stopColor="#D1D3D4"/>
+		</linearGradient>
+		<linearGradient x1="31.132660" y1="27.139484" x2="31.132660" y2="19.003271" id="paint_linear_1_4716_0" gradientUnits="userSpaceOnUse">
+			<stop offset="0.387000" stopColor="#D1D3D4" stopOpacity="0.000000"/>
+			<stop offset="1.000000" stopColor="#D1D3D4"/>
+		</linearGradient>
+		<linearGradient x1="16.645264" y1="34.534645" x2="35.444702" y2="34.534645" id="paint_linear_1_4717_0" gradientUnits="userSpaceOnUse">
+			<stop stopColor="#E8E7E5"/>
+			<stop offset="1.000000" stopColor="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="15.780334" y1="20.994968" x2="36.190479" y2="20.994968" id="paint_linear_1_4719_0" gradientUnits="userSpaceOnUse">
+			<stop stopColor="#E8E7E5"/>
+			<stop offset="1.000000" stopColor="#FFFFFF"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip1_4709)">
+		<path id="Vector" d="M39.28 45.28L26.08 48.83L12.89 45.28L9.84 12.29L42.32 12.29L39.28 45.28Z" fill="#2062AF" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M26.08 14.96L26.08 46L26.11 46.01L36.79 43.13L39.25 14.96L26.08 14.96Z" fill="#3C9CD7" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M18.59 7.44L18.59 5.48L21.46 5.48L21.46 3.33L16.44 3.33L16.44 9.4L21.46 9.4L21.46 7.44L18.59 7.44ZM26.61 5.48L28.61 5.48L28.61 3.33L23.6 3.33L23.6 5.48C24.27 6.15 24.62 6.47 25.59 7.44C25.02 7.44 23.6 7.44 23.6 7.44L23.6 9.4L28.61 9.4L28.61 7.44L26.61 5.48ZM33.72 5.48L35.72 5.48L35.72 3.33L30.71 3.33L30.71 5.48C31.38 6.15 31.73 6.47 32.7 7.44C32.13 7.44 30.71 7.44 30.71 7.44L30.71 9.4L35.72 9.4L35.72 7.44L33.72 5.48Z" fill="#000000" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M26.07 23.21L16.63 27.14L16.94 31.04L26.07 27.13L35.78 22.98L36.19 19L26.07 23.21Z" fill="#FFFFFF" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16.63 27.14L16.94 31.04L26.07 27.13L26.07 23.21L16.63 27.14Z" fill="url(#paint_linear_1_4715_0)" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M36.19 19L26.07 23.21L26.07 27.13L35.78 22.98L36.19 19Z" fill="url(#paint_linear_1_4716_0)" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16.64 27.14L16.95 31.04L30.96 31.08L30.65 36.28L26.04 37.57L21.61 36.45L21.34 33.23L17.22 33.23L17.76 39.45L26.08 41.91L34.37 39.5L35.44 27.14L16.64 27.14Z" fill="url(#paint_linear_1_4717_0)" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<g opacity="0.050000">
+			<path id="Vector" d="M26.07 27.14L16.63 27.14L16.94 31.04L26.07 31.07L26.07 27.14ZM26.07 37.56L26.03 37.57L21.59 36.45L21.33 33.23L17.21 33.23L17.74 39.45L26.07 41.91L26.07 37.56Z" fill="#000000" fillOpacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<path id="Vector" d="M15.78 19L36.19 19L35.78 22.98L16.27 22.98L15.78 19Z" fill="url(#paint_linear_1_4719_0)" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<g opacity="0.050000">
+			<path id="Vector" d="M26.07 19L15.78 19L16.27 22.98L26.07 22.98L26.07 19Z" fill="#000000" fillOpacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</symbol>
+
+
+<symbol id='JS' width="44.491516" height="49.562073" viewBox="0 0 44.4915 49.5621" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2" y="2" width="28" height="28" fill="#FFCA28"/>
+<path d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z" fill="#3E3E3E"/>
+<path d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z" fill="#3E3E3E"/>
+</symbol>
+
+
+<symbol id='bootstrap-icon' width="44.491516" height="49.562073" viewBox="0 0 44.4915 49.5621" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_4731">
+			<rect id="bootstrap-4-logo-svgrepoCom 1" width="39.130436" height="39.130436" fill="white" fillOpacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="bootstrap-4-logo-svgrepoCom 1" width="39.130436" height="39.130436" fill="#FFFFFF" fillOpacity="0"/>
+	<g clip-path="url(#clip1_4731)">
+		<path id="Vector" d="M0 34.08C0 36.87 2.25 39.13 5.04 39.13L34.08 39.13C36.87 39.13 39.13 36.87 39.13 34.08L39.13 5.04C39.13 2.25 36.87 0 34.08 0L5.04 0C2.25 0 0 2.25 0 5.04L0 34.08L0 34.08Z" fill="#563D7C" fillOpacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16.22 17.3L16.22 11.76L21.1 11.76C21.56 11.76 22.01 11.8 22.44 11.88C22.87 11.96 23.26 12.09 23.59 12.29C23.92 12.49 24.19 12.77 24.38 13.12C24.58 13.48 24.68 13.93 24.68 14.48C24.68 15.48 24.38 16.2 23.79 16.64C23.19 17.08 22.43 17.3 21.5 17.3L16.22 17.3ZM11.01 7.71L11.01 31.41L22.49 31.41C23.55 31.41 24.59 31.27 25.6 31.01C26.6 30.74 27.5 30.33 28.28 29.78C29.07 29.23 29.69 28.51 30.16 27.64C30.62 26.77 30.86 25.73 30.86 24.54C30.86 23.06 30.5 21.79 29.78 20.74C29.06 19.69 27.97 18.95 26.51 18.53C27.57 18.02 28.37 17.37 28.91 16.57C29.46 15.78 29.73 14.78 29.73 13.59C29.73 12.48 29.54 11.55 29.18 10.8C28.81 10.05 28.3 9.45 27.64 8.99C26.97 8.54 26.18 8.21 25.25 8.01C24.32 7.81 23.29 7.71 22.16 7.71L11.01 7.71ZM16.22 27.36L16.22 20.85L21.9 20.85C23.02 20.85 23.93 21.11 24.62 21.63C25.3 22.15 25.65 23.02 25.65 24.24C25.65 24.86 25.54 25.37 25.33 25.77C25.12 26.16 24.84 26.48 24.48 26.71C24.13 26.94 23.72 27.11 23.26 27.21C22.79 27.31 22.31 27.36 21.8 27.36L16.22 27.36Z" fill="#FFFFFF" fillOpacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</symbol>
+
+
 </svg>
 
 

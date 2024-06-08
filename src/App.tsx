@@ -4,7 +4,7 @@ import { Header } from './layouts/Header';
 import { Main } from './layouts/sections/Main';
 import { Projects } from './layouts/sections/Projects';
 import { ContactMe } from './layouts/sections/ContactMe';
-import { Footer } from './layouts/sections/Footer';
+import { Footer } from './layouts/Footer';
 import { Skills } from './layouts/sections/Skills';
 
 function App() {

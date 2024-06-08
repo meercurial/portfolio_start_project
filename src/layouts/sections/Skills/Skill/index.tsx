@@ -19,7 +19,7 @@ export const Skill: React.FC<ISkillProps> = ({ skillData }) => {
       <SkillTitle>I have a vast experience in the following web technologies:</SkillTitle>
       {skillData.map((obj, index) => {
         return (
-          <FlexWrapper key={index} flexDirection="row">
+          <FlexWrapper key={index}>
             <Icon iconId={obj.iconId} width={obj.width} height={obj.height} viewBox={obj.viewBox} />
             <SkillText>{obj.skillTitleText}</SkillText>
           </FlexWrapper>
@@ -29,7 +29,10 @@ export const Skill: React.FC<ISkillProps> = ({ skillData }) => {
   );
 };
 
-const SkillTitle: any = styled.span``;
+const SkillTitle: any = styled.span`
+  width: 510px;
+  height: 30px;
+`;
 
 interface ISkillText {
   position?: string;

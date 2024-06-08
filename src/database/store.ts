@@ -1,6 +1,6 @@
-import project_one from '../assets/images/projects_img/project_one.png';
-import project_two from '../assets/images/projects_img/project_two.png';
-import project_three from '../assets/images/projects_img/project_three.png';
+import project_one from '../assets/projects_img/project_one.png';
+import project_two from '../assets/projects_img/project_two.png';
+import project_three from '../assets/projects_img/project_two.png';
 
 export type skillDataType = {
   iconId: string;
@@ -14,30 +14,30 @@ export const skillData: skillDataType[] = [
   {
     iconId: 'css-icon',
     skillTitleText: 'CSS3',
-    width: '43.695679',
-    height: '43.695679',
-    viewBox: '0 0 43.6957 43.6957',
+    width: '52.173889',
+    height: '52.173889',
+    viewBox: '0 0 52.1739 52.1739',
   },
   {
-    iconId: 'css-icon',
+    iconId: 'HTML5-icon',
     skillTitleText: 'HTML 5',
     width: '43.695679',
     height: '43.695679',
     viewBox: '0 0 43.6957 43.6957',
   },
   {
-    iconId: 'css-icon',
+    iconId: 'JS',
     skillTitleText: 'Java Script',
-    width: '43.695679',
-    height: '43.695679',
-    viewBox: '0 0 43.6957 43.6957',
+    width: '44.491516',
+    height: '49.562073',
+    viewBox: '0 0 44.4915 49.5621',
   },
   {
-    iconId: 'css-icon',
+    iconId: 'bootstrap-icon',
     skillTitleText: 'Bootstrap',
-    width: '43.695679',
-    height: '43.695679',
-    viewBox: '0 0 43.6957 43.6957',
+    width: '39.130432',
+    height: '39.130432',
+    viewBox: '0 0 39.1304 39.1304',
   },
 ];
 
