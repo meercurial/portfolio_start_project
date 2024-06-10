@@ -37,4 +37,8 @@ body {
  main {
    background-color: ${theme.colors.mainBg}
  }
+
+ *,  *::after {
+    margin-top: -4px;
+}
 `;
