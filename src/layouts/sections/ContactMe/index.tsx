@@ -8,8 +8,10 @@ export const ContactMe: React.FC = () => {
   return (
     <StyledContactMeSection>
       <Container>
-        <SectionTitle>Contact me</SectionTitle>
-        <FlexWrapper>
+        <SectionTitle display="flex" justifyContent="center" marginTop="75px" marginBottom="30px">
+          Contact me
+        </SectionTitle>
+        <FlexWrapper justifyContent="space-between" padding="0 100px">
           <svg
             width="563.000000"
             height="412.000000"
