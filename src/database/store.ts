@@ -88,3 +88,14 @@ export const projectData: projectDataType[] = [
     projectText: 'Made an I.P address tracking website.',
   },
 ];
+
+export type socialsDataType = {
+  iconId: string;
+};
+
+export const socialsData: socialsDataType[] = [
+  { iconId: 'linkedIn-icon' },
+  { iconId: 'whatsapp-icon' },
+  { iconId: 'twitter-icon' },
+  { iconId: 'gmail-icon' },
+];

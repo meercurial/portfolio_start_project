@@ -21,7 +21,7 @@ export const Menu: React.FC = () => {
                     viewBox={obj.viewBox}
                   />
                 )}
-                {obj.menuTitleText}
+                {obj.menuTitleText ? obj.menuTitleText : ''}
               </StyledLink>
             </StyleLinkContainer>
           </li>

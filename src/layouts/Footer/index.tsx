@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
   return (
     <Container>
       <StyledFooterContainer>
-        <FlexWrapper>
+        <FlexWrapper justifyContent="space-between" padding="0 100px">
           <Socials />
           <GitComponent />
         </FlexWrapper>
@@ -20,12 +20,4 @@ export const Footer: React.FC = () => {
   );
 };
 
-const StyledFooterContainer: any = styled.footer`
-  ::before {
-    content: url(${bg_wave_top});
-    margin-bottom: 20px;
-  }
-  ::after {
-    content: url(${bg_wave_bottom});
-  }
-`;
+const StyledFooterContainer: any = styled.footer``;

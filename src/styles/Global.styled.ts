@@ -38,7 +38,8 @@ body {
    background-color: ${theme.colors.mainBg}
  }
 
- *,  *::after {
-    margin-top: -4px;
-}
+ footer {
+  background-color: ${theme.colors.footerBg}
+ }
+
 `;

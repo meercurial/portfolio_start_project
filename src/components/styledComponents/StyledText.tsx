@@ -20,6 +20,7 @@ interface IStyledText {
   lineHeight?: string;
   letterSpacing?: string;
   textAlign?: string;
+  marginBottom?: string;
 }
 
 export const StyledText: any = styled.span<IStyledText>`
@@ -42,4 +43,5 @@ export const StyledText: any = styled.span<IStyledText>`
   line-height: ${({ lineHeight }) => lineHeight};
   letter-spacing: ${({ letterSpacing }) => letterSpacing};
   text-align: ${({ textAlign }) => textAlign};
+  margin-bottom: ${({ marginBottom }) => marginBottom};
 `;
