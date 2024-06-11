@@ -15,7 +15,7 @@ interface ISkillProps {
 
 export const Skill: React.FC<ISkillProps> = ({ skillData }) => {
   return (
-    <FlexWrapper>
+    <FlexWrapper padding="120px 0px">
       {skillData.map((obj, index) => {
         return (
           <SkillsContainer key={index}>

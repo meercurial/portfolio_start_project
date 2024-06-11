@@ -27,6 +27,8 @@ interface ISectionTitle {
   marginBottom?: string;
   marginTop?: string;
   whiteSpace?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
 }
 
 export const SectionTitle: any = styled.h2<ISectionTitle>`
@@ -55,4 +57,6 @@ export const SectionTitle: any = styled.h2<ISectionTitle>`
   margin-bottom: ${({ marginBottom }) => marginBottom};
   margin-top: ${({ marginTop }) => marginTop};
   white-space: ${({ whiteSpace }) => whiteSpace};
+  padding-top: ${({ paddingTop }) => paddingTop};
+  padding-bottom: ${({ paddingBottom }) => paddingBottom};
 `;

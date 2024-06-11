@@ -12,7 +12,7 @@ interface IProjectCardProps {
 
 export const ProjectCard: React.FC<IProjectCardProps> = ({ projectData }) => {
   return (
-    <FlexWrapper gap="58px" padding="117px 100px 40px" justifyContent="center">
+    <FlexWrapper gap="58px" padding="25px 100px 40px" justifyContent="center">
       {projectData.map((obj, i) => {
         return (
           <ProjectCardContainer>

@@ -16,6 +16,8 @@ interface IFlexWrapper {
   border?: string;
   flexWrap?: string;
   background?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
 }
 
 export const FlexWrapper: any = styled.div<IFlexWrapper>`
@@ -34,4 +36,6 @@ export const FlexWrapper: any = styled.div<IFlexWrapper>`
   border: ${({ border }) => border};
   flex-wrap: ${({ flexWrap }) => flexWrap};
   background: ${({ background }) => background};
+  padding-top: ${({ paddingTop }) => paddingTop};
+  padding-bottom: ${({ paddingBottom }) => paddingBottom};
 `;

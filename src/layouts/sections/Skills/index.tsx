@@ -5,6 +5,7 @@ import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
 import { Skill } from './Skill';
 import { Container } from '../../../components/styledComponents/Container';
 import { skillData, skillDataType } from '../../../database/store';
+import { StyledText } from '../../../components/styledComponents/StyledText';
 
 export const Skills: React.FC = () => {
   return (
@@ -22,7 +23,13 @@ export const Skills: React.FC = () => {
           textAlign="left">
           Skills
         </SectionTitle>
-        <SkillTitle
+        <FlexWrapper></FlexWrapper>
+        <StyledText
+          display="flex"
+          marginLeft="100px"
+          marginBottom="40px"
+          width="510px"
+          height="30px"
           color="rgb(129, 128, 128)"
           fontFamily="Be Vietnam"
           fontSize="18px"
@@ -31,8 +38,8 @@ export const Skills: React.FC = () => {
           letterSpacing="0%"
           textAlign="left">
           I have a vast experience in the following web technologies:
-        </SkillTitle>
-        <FlexWrapper justifyContent="space-between">
+        </StyledText>
+        <FlexWrapper justifyContent="space-between" padding="0 100px">
           <Skill skillData={skillData as skillDataType[]} />
           <svg
             width="511.000000"
@@ -277,16 +284,6 @@ export const Skills: React.FC = () => {
     </StyledSkillsSection>
   );
 };
-
-const SkillTitle: any = styled.span`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0px;
-  margin-top: 120px;
-  margin-bottom: 50px;
-`;
 
 interface IStyledSkillsSection {
   position?: string;
