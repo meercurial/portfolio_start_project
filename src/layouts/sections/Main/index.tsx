@@ -5,6 +5,7 @@ import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
 import { StyledBtn } from '../../../components/styledComponents/StyledBtn';
 import { StyledTextBtn } from '../../../components/styledComponents/StyledTextBtn';
 import { Container } from '../../../components/styledComponents/Container';
+import { StyledText } from '../../../components/styledComponents/StyledText';
 
 export const Main: React.FC = () => {
   return (
@@ -12,21 +13,50 @@ export const Main: React.FC = () => {
       <Container>
         <FlexWrapper justifyContent="space-between" padding="64px 100px 37px">
           <AboutMe>
-            <span>Hi, I'm a</span>
+            <StyledText
+              color="rgb(52, 61, 104)"
+              fontFamily="Be Vietnam"
+              fontSize="48px"
+              fontWeight="600"
+              lineHeight="117.6%"
+              letterSpacing="0.18px"
+              textAlign="left">
+              Hi, I'm a
+            </StyledText>
             <MainTitle>Software Developer</MainTitle>
-            <p>
+            <StyledText>
               I'm Jihn Doe, a developer dedicated to making the world <br />a better place one line
               of code at a time.
-            </p>
+            </StyledText>
             <StyledBtn
               display="flex"
-              flexDirection="row"
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              padding=" 8px 16px 8px 16px"
+              flex-direction="row"
+              cursor="pointer"
+              padding="8px 16px 8px 16px"
+              justifyContent="center"
+              alignItems="center"
               width="100px"
-              height="45px">
-              <StyledTextBtn>Hire me</StyledTextBtn>
+              height="45px"
+              borderRadius="4px"
+              boxShadow="0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 3px 1px 0px rgba(0, 0, 0, 0.12),0px 2px 2px 0px rgba(0, 0, 0, 0.14)"
+              background="rgb(232, 73, 73)">
+              <StyledTextBtn
+                display="flex"
+                flexDirection="row"
+                justifyContent="center"
+                alignItems="center"
+                padding="8px 16px 8px 16px"
+                width="65px"
+                height="25px"
+                whiteSpace="nowrap"
+                color=" rgb(255, 255, 255)"
+                font-size=" 18px"
+                font-weight=" 400"
+                line-height=" 26px"
+                letter-spacing=" 0%"
+                text-align=" center">
+                Hire me
+              </StyledTextBtn>
             </StyledBtn>
           </AboutMe>
           <StyledPhotoImg src={photo} alt="user photo" />
@@ -84,6 +114,21 @@ const StyledPhotoImg: any = styled.img<IPhoto>`
   margin: ${({ margin }) => margin};
 `;
 
-const MainTitle: any = styled.h1``;
+const MainTitle: any = styled.h1`
+  color: rgb(52, 61, 104);
+  font-family: Be Vietnam;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 117.6%;
+  letter-spacing: 0.18px;
+  text-align: left;
+`;
 
-const AboutMe: any = styled.div``;
+const AboutMe: any = styled.div`
+  width: 555px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+`;

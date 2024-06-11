@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { menuTitle } from '../../database/store';
 import { Icon } from '../Icon';
 import { StyleLinkContainer } from '../styledComponents/StyledLinkContainer';
+import { StyledText } from '../styledComponents/StyledText';
 
 export const Menu: React.FC = () => {
   return (
@@ -21,7 +22,20 @@ export const Menu: React.FC = () => {
                     viewBox={obj.viewBox}
                   />
                 )}
-                {obj.menuTitleText ? obj.menuTitleText : ''}
+                {obj.menuTitleText ? (
+                  <StyledText
+                    color="rgb(0, 0, 0)"
+                    fontFamily="Be Vietnam"
+                    fontSize="18px"
+                    fontWeight="400"
+                    lineHeight="26px"
+                    letterSpacing="0%"
+                    textAlign="left">
+                    {obj.menuTitleText}
+                  </StyledText>
+                ) : (
+                  ''
+                )}
               </StyledLink>
             </StyleLinkContainer>
           </li>

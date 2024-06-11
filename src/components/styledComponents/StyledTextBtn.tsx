@@ -15,11 +15,12 @@ interface IStyledTextBtn {
   margin?: string;
   color?: string;
   fontFamily?: string;
+  whiteSpace?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+  textAlign?: string;
   fontSize?: string;
   fontWeight?: string;
-  lineHeight?: string;
-  letterSpacing?: string;
-  textAlign?: string;
 }
 
 export const StyledTextBtn = styled.span<IStyledTextBtn>`
@@ -42,4 +43,5 @@ export const StyledTextBtn = styled.span<IStyledTextBtn>`
   line-height: ${({ lineHeight }) => lineHeight};
   letter-spacing: ${({ letterSpacing }) => letterSpacing};
   text-align: ${({ textAlign }) => textAlign};
+  white-space: ${({ whiteSpace }) => whiteSpace};
 `;

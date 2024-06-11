@@ -284,6 +284,7 @@ export const ContactMe: React.FC = () => {
             <StyledInput
               type="email"
               name="email"
+              placeholder="Enter email address"
               position="static"
               width="615px"
               height="55px"
@@ -303,6 +304,7 @@ export const ContactMe: React.FC = () => {
               background="rgb(255, 255, 255)"></StyledInput>
             <StyledInput
               position="static"
+              placeholder="Enter message..."
               width="615px"
               height="160px"
               display="flex"

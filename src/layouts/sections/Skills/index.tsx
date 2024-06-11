@@ -10,10 +10,28 @@ export const Skills: React.FC = () => {
   return (
     <StyledSkillsSection>
       <Container>
-        <SectionTitle display="flex" justifyContent="center">
+        <SectionTitle
+          display="flex"
+          justifyContent="center"
+          color="rgb(232, 73, 73)"
+          fontFamily="Be Vietnam"
+          fontSize="20px"
+          fontWeight="500"
+          lineHeight="29px"
+          letterSpacing="0%"
+          textAlign="left">
           Skills
         </SectionTitle>
-        <SkillTitle>I have a vast experience in the following web technologies:</SkillTitle>
+        <SkillTitle
+          color="rgb(129, 128, 128)"
+          fontFamily="Be Vietnam"
+          fontSize="18px"
+          fontWeight="400"
+          lineHeight="26px"
+          letterSpacing="0%"
+          textAlign="left">
+          I have a vast experience in the following web technologies:
+        </SkillTitle>
         <FlexWrapper justifyContent="space-between">
           <Skill skillData={skillData as skillDataType[]} />
           <svg

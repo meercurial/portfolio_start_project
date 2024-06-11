@@ -19,9 +19,26 @@ export const Projects: React.FC = () => {
             height="30.000000"
             viewBox="0 0 30 30"
           />
-          <SectionTitle>Projects</SectionTitle>
+          <SectionTitle
+            color="rgba(255, 255, 255, 0.87)"
+            fontFamily="Be Vietnam"
+            fontSize="20px"
+            fontWeight="500"
+            lineHeight="29px"
+            letterSpacing="0%"
+            textAlign="left">
+            Projects
+          </SectionTitle>
         </FlexWrapper>
-        <StyledText display="flex" justifyContent="center">
+        <StyledText
+          display="flex"
+          justifyContent="center"
+          color="rgba(255, 255, 255, 0.87)"
+          fontSize="18px"
+          fontWeight="400"
+          lineHeight="26px"
+          letterSpacing="0%"
+          textAlign="left">
           A select number of projects.
         </StyledText>
         <ProjectCard projectData={projectData as projectDataType[]} />

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Image } from '../../../../components/Image';
 import { StyledBtn } from '../../../../components/styledComponents/StyledBtn';
 import { FlexWrapper } from '../../../../components/styledComponents/FlexWrapper';
+import { StyledTextBtn } from '../../../../components/styledComponents/StyledTextBtn';
+import { StyledText } from '../../../../components/styledComponents/StyledText';
 
 interface IProjectCardProps {
   projectData: Array<{ src: string; projectText: string; alt: string }>;
@@ -15,21 +17,37 @@ export const ProjectCard: React.FC<IProjectCardProps> = ({ projectData }) => {
         return (
           <ProjectCardContainer>
             <Image src={obj.src} alt={obj.alt} />
-            <p>{obj.projectText}</p>
+            <StyledText
+              color="rgba(255, 255, 255, 0.87)"
+              fontFamily="Be Vietnam"
+              fontSize="16px"
+              fontWeight="400"
+              lineHeight="23px"
+              letterSpacing="0%"
+              textAlign="center">
+              {obj.projectText}
+            </StyledText>
             <StyledBtn
               display="flex"
               flex-direction="row"
               cursor="pointer"
-              padding="0px 125px"
               justifyContent="center"
               alignItems="center"
-              pading="0px 125px 12px"
-              width="131px"
-              height="42px"
+              width="135px"
+              height="45px"
               border="2px solid rgb(255, 255, 255)"
               borderRadius="4px"
               background="rgba(52, 61, 104, 0.08)">
-              Learn more
+              <StyledTextBtn
+                width="75px"
+                height="20px"
+                display="flex"
+                flex-direction="row"
+                justify-content="center"
+                align-items="center"
+                whiteSpace="nowrap">
+                Learn more
+              </StyledTextBtn>
             </StyledBtn>
           </ProjectCardContainer>
         );

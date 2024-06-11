@@ -8,7 +8,7 @@ interface IStyledBtn {
   flexDirection?: string;
   justifyContent?: string;
   alignItems?: string;
-  pading?: string;
+  padding?: string;
   flex?: string;
   order?: string;
   flexGrow?: string;
@@ -28,7 +28,7 @@ export const StyledBtn: any = styled.button<IStyledBtn>`
   flex-direction: ${({ flexDirection }) => flexDirection};
   justify-content: ${({ justifyContent }) => justifyContent};
   align-items: ${({ alignItems }) => alignItems};
-  pading: ${({ pading }) => pading};
+  padding: ${({ padding }) => padding};
   flex: ${({ flex }) => flex};
   order: ${({ order }) => order};
   flex-grow: ${({ flexGrow }) => flexGrow};
