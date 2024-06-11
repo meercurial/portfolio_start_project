@@ -15,6 +15,7 @@ interface IFlexWrapper {
   gap?: string;
   border?: string;
   flexWrap?: string;
+  background?: string;
 }
 
 export const FlexWrapper: any = styled.div<IFlexWrapper>`
@@ -32,4 +33,5 @@ export const FlexWrapper: any = styled.div<IFlexWrapper>`
   gap: ${({ gap }) => gap};
   border: ${({ border }) => border};
   flex-wrap: ${({ flexWrap }) => flexWrap};
+  background: ${({ background }) => background};
 `;

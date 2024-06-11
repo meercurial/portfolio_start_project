@@ -19,6 +19,7 @@ export const ProjectCard: React.FC<IProjectCardProps> = ({ projectData }) => {
             <StyledBtn
               display="flex"
               flex-direction="row"
+              cursor="pointer"
               padding="0px 125px"
               justifyContent="center"
               alignItems="center"
