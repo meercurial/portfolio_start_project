@@ -18,7 +18,14 @@ export const Main: React.FC = () => {
               I'm Jihn Doe, a developer dedicated to making the world <br />a better place one line
               of code at a time.
             </p>
-            <StyledBtn>
+            <StyledBtn
+              display="flex"
+              flexDirection="row"
+              justifyContent="flex-start"
+              alignItems="flex-start"
+              padding=" 8px 16px 8px 16px"
+              width="100px"
+              height="45px">
               <StyledTextBtn>Hire me</StyledTextBtn>
             </StyledBtn>
           </AboutMe>

@@ -4,6 +4,7 @@ import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
 import { SectionTitle } from '../../../components/styledComponents/SectionTitle';
 import { Container } from '../../../components/styledComponents/Container';
 import { StyledBtn } from '../../../components/styledComponents/StyledBtn';
+import { Icon } from '../../../components/Icon';
 
 export const ContactMe: React.FC = () => {
   return (
@@ -337,6 +338,12 @@ export const ContactMe: React.FC = () => {
               borderRadius="4px"
               background="rgb(52, 61, 104)">
               Отправить
+              <Icon
+                iconId="paper-plane-icon"
+                width="21.473694"
+                height="24.000000"
+                viewBox="0 0 21.4737 24"
+              />
             </StyledBtn>
           </StyledForm>
         </FlexWrapper>

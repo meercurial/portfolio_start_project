@@ -12,8 +12,13 @@ export const Projects: React.FC = () => {
   return (
     <StyledProjects>
       <Container background="rgb(52, 61, 104)">
-        <FlexWrapper flexDirection="column" justifyContent="flex-start" alignItems="center">
-          <Icon iconId="gears-project-icon" />
+        <FlexWrapper flexDirection="row" justifyContent="center" alignItems="center">
+          <Icon
+            iconId="gears-project-icon"
+            width="30.000000"
+            height="30.000000"
+            viewBox="0 0 30 30"
+          />
           <SectionTitle>Projects</SectionTitle>
         </FlexWrapper>
         <StyledText display="flex" justifyContent="center">
