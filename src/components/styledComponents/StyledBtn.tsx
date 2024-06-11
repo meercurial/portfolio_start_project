@@ -17,6 +17,7 @@ interface IStyledBtn {
   boxShadow?: string;
   background?: string;
   border?: string;
+  cursor?: string;
 }
 
 export const StyledBtn: any = styled.button<IStyledBtn>`
@@ -36,4 +37,5 @@ export const StyledBtn: any = styled.button<IStyledBtn>`
   box-shadow: ${({ boxShadow }) => boxShadow};
   background: ${({ background }) => background};
   border: ${({ border }) => border};
+  cursor: ${({ cursor }) => cursor};
 `;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
 import { SectionTitle } from '../../../components/styledComponents/SectionTitle';
 import { Container } from '../../../components/styledComponents/Container';
+import { StyledBtn } from '../../../components/styledComponents/StyledBtn';
 
 export const ContactMe: React.FC = () => {
   return (
@@ -283,8 +284,8 @@ export const ContactMe: React.FC = () => {
               type="email"
               name="email"
               position="static"
-              width="613px"
-              height="53px"
+              width="615px"
+              height="55px"
               display="flex"
               flexDirection="row"
               justifyContent="flex-start"
@@ -294,16 +295,15 @@ export const ContactMe: React.FC = () => {
               order="0"
               alignSelf="stretch"
               flexGrow="0"
-              margin="43px 0px"
-              boxSizing="border-box"
+              margin="45px 0px"
               border="1px solid rgba(0,0,0,0.12)"
               borderRadius="4px"
               boxShadow="0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 2px 1px 0px rgba(0, 0, 0, 0.12),0px 1px 1px 0px rgba(0, 0, 0, 0.14)"
               background="rgb(255, 255, 255)"></StyledInput>
             <StyledInput
               position="static"
-              width="613px"
-              height="158px"
+              width="615px"
+              height="160px"
               display="flex"
               flexDirection="row"
               justifyContent="flex-start"
@@ -319,8 +319,9 @@ export const ContactMe: React.FC = () => {
               borderRadius="4px"
               boxShadow="0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 2px 1px 0px rgba(0, 0, 0, 0.12),0px 1px 1px 0px rgba(0, 0, 0, 0.14)"
               background="rgb(255, 255, 255)"></StyledInput>
-            <StyledInput
+            <StyledBtn
               type="submit"
+              cursor="pointer"
               position="static"
               width="213.47px"
               height="50px"
@@ -334,7 +335,9 @@ export const ContactMe: React.FC = () => {
               flexGrow="0"
               margin="43px 0px"
               borderRadius="4px"
-              background="rgb(52, 61, 104)"></StyledInput>
+              background="rgb(52, 61, 104)">
+              Отправить
+            </StyledBtn>
           </StyledForm>
         </FlexWrapper>
       </Container>

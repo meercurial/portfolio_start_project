@@ -11,7 +11,11 @@ export const Footer: React.FC = () => {
   return (
     <Container>
       <StyledFooterContainer>
-        <FlexWrapper justifyContent="space-between" padding="0 100px">
+        <FlexWrapper
+          justifyContent="space-between"
+          flexDirection="row"
+          alignItems="center"
+          margin="auto 100px">
           <Socials />
           <GitComponent />
         </FlexWrapper>

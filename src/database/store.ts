@@ -99,3 +99,5 @@ export const socialsData: socialsDataType[] = [
   { iconId: 'twitter-icon' },
   { iconId: 'gmail-icon' },
 ];
+
+
