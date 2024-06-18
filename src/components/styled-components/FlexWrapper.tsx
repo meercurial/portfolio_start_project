@@ -38,4 +38,5 @@ export const FlexWrapper: any = styled.div<IFlexWrapper>`
   background: ${({ background }) => background};
   padding-top: ${({ paddingTop }) => paddingTop};
   padding-bottom: ${({ paddingBottom }) => paddingBottom};
+  height: 100%;
 `;

@@ -3,44 +3,46 @@ import { theme } from './Theme';
 import bg_wave from '../assets/wave.svg';
 
 export const GlobalStyle = createGlobalStyle`
-*, 
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: "Be Vietnam Pro" -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
- a {
-    text-decoration: none;
-}
+    body {
+        margin: 0;
+        font-family: "Be Vietnam Pro" -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.2;
+    }
 
- ul {
-    list-style: none;
- }
+    a {
+        text-decoration: none;
+    }
 
- button {
-    background-color: unset;
-    border: none;
- }
+    ul {
+        list-style: none;
+    }
 
- header {
-   background-color: ${theme.colors.headerBg}
- }
+    button {
+        background-color: unset;
+        border: none;
+    }
 
- main {
-   background-color: ${theme.colors.mainBg}
- }
+    header {
+        background-color: ${theme.colors.headerBg}
+    }
 
- footer {
-  background-image: url(${bg_wave});
- }
+    main {
+        background-color: ${theme.colors.mainBg}
+    }
+
+    footer {
+        background-image: url(${bg_wave});
+    }
 
 `;

@@ -33,7 +33,8 @@ export const Main: React.FC = () => {
                             flex-direction="row"
                             cursor="pointer"
                             padding="8px 16px 8px 16px"
-                            justifyContent="center"
+                            justifyContent="flex-start"
+                            margin="30px 0px"
                             alignItems="center"
                             width="100px"
                             height="45px"
@@ -57,6 +58,7 @@ export const Main: React.FC = () => {
 };
 
 const StyledMain: any = styled.main`
+    display: flex;
     padding: 100px 0px 25px;
 `;
 
@@ -85,9 +87,8 @@ const MainTitle: any = styled.h1`
     font-family: Be Vietnam;
     font-size: 48px;
     font-weight: 600;
-    line-height: 117.6%;
-    letter-spacing: 0.18px;
-    text-align: left;
+    text-align: center;
+    margin: 0px 0px 30px;
 `;
 
 const AboutMe: any = styled.div`
