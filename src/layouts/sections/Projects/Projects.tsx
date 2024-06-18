@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle } from '../../../components/styledComponents/SectionTitle';
-import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
-import { Container } from '../../../components/styledComponents/Container';
-import { StyledText } from '../../../components/styledComponents/StyledText';
+import { SectionTitle } from '../../../components/styled-components/SectionTitle';
+import { FlexWrapper } from '../../../components/styled-components/FlexWrapper';
+import { Container } from '../../../components/styled-components/Container';
+import { StyledText } from '../../../components/styled-components/StyledText';
 import { projectData, projectDataType } from '../../../database/store';
-import { ProjectCard } from './ProjectCard';
-import { Icon } from '../../../components/Icon';
+import { ProjectCard } from './ProjectCard/ProjectCard';
+import { Icon } from '../../../components/Icon/Icon';
 
 export const Projects: React.FC = () => {
   return (
     <StyledProjects>
-      <Container background="rgb(52, 61, 104)">
-        <FlexWrapper flexDirection="column" paddingTop="30px">
-          <FlexWrapper flexDirection="row" justifyContent="center" alignItems="center">
+      <Container>
+        <FlexWrapper flexDirection="column">
+          <FlexWrapper flexDirection="row" justifyContent="center">
             <Icon
               iconId="gears-project-icon"
               width="30.000000"
@@ -32,8 +32,6 @@ export const Projects: React.FC = () => {
             </SectionTitle>
           </FlexWrapper>
           <StyledText
-            display="flex"
-            justifyContent="center"
             color="rgba(255, 255, 255, 0.87)"
             fontSize="18px"
             fontWeight="400"
@@ -49,4 +47,6 @@ export const Projects: React.FC = () => {
   );
 };
 
-const StyledProjects: any = styled.section``;
+const StyledProjects: any = styled.section`
+  background: rgb(52, 61, 104);
+`;

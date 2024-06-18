@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '../../../../components/Image';
-import { StyledBtn } from '../../../../components/styledComponents/StyledBtn';
-import { FlexWrapper } from '../../../../components/styledComponents/FlexWrapper';
-import { StyledTextBtn } from '../../../../components/styledComponents/StyledTextBtn';
-import { StyledText } from '../../../../components/styledComponents/StyledText';
+import { Image } from '../../../../components/Image/Image';
+import { StyledBtn } from '../../../../components/styled-components/StyledBtn';
+import { FlexWrapper } from '../../../../components/styled-components/FlexWrapper';
+import { StyledTextBtn } from '../../../../components/styled-components/StyledTextBtn';
+import { StyledText } from '../../../../components/styled-components/StyledText';
 
 interface IProjectCardProps {
   projectData: Array<{ src: string; projectText: string; alt: string }>;
@@ -12,7 +12,7 @@ interface IProjectCardProps {
 
 export const ProjectCard: React.FC<IProjectCardProps> = ({ projectData }) => {
   return (
-    <FlexWrapper gap="58px" padding="25px 100px 40px" justifyContent="center">
+    <FlexWrapper gap="58px" justifyContent="center">
       {projectData.map((obj, i) => {
         return (
           <ProjectCardContainer>
@@ -37,17 +37,9 @@ export const ProjectCard: React.FC<IProjectCardProps> = ({ projectData }) => {
               height="45px"
               border="2px solid rgb(255, 255, 255)"
               borderRadius="4px"
-              background="rgba(52, 61, 104, 0.08)">
-              <StyledTextBtn
-                width="75px"
-                height="20px"
-                display="flex"
-                flex-direction="row"
-                justify-content="center"
-                align-items="center"
-                whiteSpace="nowrap">
-                Learn more
-              </StyledTextBtn>
+              background="rgba(52, 61, 104, 0.08)"
+              whiteSpace="nowrap">
+              <StyledTextBtn>Learn more</StyledTextBtn>
             </StyledBtn>
           </ProjectCardContainer>
         );

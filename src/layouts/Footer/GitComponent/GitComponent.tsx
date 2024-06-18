@@ -1,7 +1,7 @@
 import React from 'react';
-import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
-import { StyledText } from '../../../components/styledComponents/StyledText';
-import { Icon } from '../../../components/Icon';
+import { FlexWrapper } from '../../../components/styled-components/FlexWrapper';
+import { StyledText } from '../../../components/styled-components/StyledText';
+import { Icon } from '../../../components/Icon/Icon';
 import styled from 'styled-components';
 
 export const GitComponent = () => {
@@ -11,11 +11,8 @@ export const GitComponent = () => {
         flexDirection="column"
         width="270px"
         height="80px"
-        alignItems="center"
         border="2px solid rgb(255, 255, 255)">
         <StyledText
-          display="flex"
-          justifyContent="center"
           marginBottom="20px"
           color="rgb(255, 255, 255)"
           fontSize=" 20px"
@@ -25,18 +22,14 @@ export const GitComponent = () => {
           textAlign="center">
           More projects I've worked on
         </StyledText>
-        <FlexWrapper width="240px" height="30px" flexDirection="row" justifyContent="flex-start">
+        <FlexWrapper flexDirection="row" justifyContent="flex-start">
           <Icon iconId="github-icon" />
           <StyledText
-            display="flex"
-            flexDirection="row"
-            justifyContent="flex-start"
-            alignItems="center"
             fontSize="18px"
             fontWeight="400"
             lineHeight="26px"
             letterSpacing="0%"
-            textAlign="left"
+            textAlign="center"
             whiteSpace="nowrap">
             @john-doe on github
           </StyledText>
@@ -47,6 +40,7 @@ export const GitComponent = () => {
 };
 
 const StyledGitComponent = styled.div`
+  align-items: center;
   width: 270px;
   height: 80px;
 `;

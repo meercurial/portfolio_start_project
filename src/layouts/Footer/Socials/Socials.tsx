@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledText } from '../../../components/styledComponents/StyledText';
-import { SocialMediaCard } from './SocialMediaCard';
+import { StyledText } from '../../../components/styled-components/StyledText';
+import { SocialMediaCard } from './SocialMediaCard/SocialMediaCard';
 import { socialsData, socialsDataType } from '../../../database/store';
 
 export const Socials: React.FC = () => {
   return (
     <SocialsContainer>
       <StyledText
-        display="flex"
-        justifyContent="start"
         marginBottom="35px"
         color=" rgb(255, 255, 255)"
         fontSize="20px"

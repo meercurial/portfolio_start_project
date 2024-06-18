@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Icon } from '../../../../components/Icon';
-import { FlexWrapper } from '../../../../components/styledComponents/FlexWrapper';
+import { Icon } from '../../../../components/Icon/Icon';
+import { FlexWrapper } from '../../../../components/styled-components/FlexWrapper';
+import { StyledText } from '../../../../components/styled-components/StyledText';
 
 interface ISkillProps {
   skillData: Array<{
@@ -15,15 +16,34 @@ interface ISkillProps {
 
 export const Skill: React.FC<ISkillProps> = ({ skillData }) => {
   return (
-    <FlexWrapper padding="120px 0px">
-      {skillData.map((obj, index) => {
-        return (
-          <SkillsContainer key={index}>
-            <Icon iconId={obj.iconId} width={obj.width} height={obj.height} viewBox={obj.viewBox} />
-            <SkillText>{obj.skillTitleText}</SkillText>
-          </SkillsContainer>
-        );
-      })}
+    <FlexWrapper flexDirection="column">
+      <StyledText
+        width="510px"
+        height="30px"
+        color="rgb(129, 128, 128)"
+        fontFamily="Be Vietnam"
+        fontSize="18px"
+        fontWeight="400"
+        lineHeight="26px"
+        letterSpacing="0%"
+        textAlign="left">
+        I have a vast experience in the following web technologies:
+      </StyledText>
+      <FlexWrapper>
+        {skillData.map((obj, index) => {
+          return (
+            <SkillsContainer key={index}>
+              <Icon
+                iconId={obj.iconId}
+                width={obj.width}
+                height={obj.height}
+                viewBox={obj.viewBox}
+              />
+              <SkillText>{obj.skillTitleText}</SkillText>
+            </SkillsContainer>
+          );
+        })}
+      </FlexWrapper>
     </FlexWrapper>
   );
 };
@@ -50,7 +70,9 @@ interface ISkillText {
   textAlign?: string;
 }
 
-export const SkillText: any = styled.h3<ISkillText>``;
+export const SkillText: any = styled.h3<ISkillText>`
+  white-space: nowrap;
+`;
 
 interface ISkillsContainer {
   position?: string;

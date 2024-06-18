@@ -1,45 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle } from '../../../components/styledComponents/SectionTitle';
-import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
-import { Skill } from './Skill';
-import { Container } from '../../../components/styledComponents/Container';
+import { SectionTitle } from '../../../components/styled-components/SectionTitle';
+import { FlexWrapper } from '../../../components/styled-components/FlexWrapper';
+import { Skill } from './Skill/Skill';
+import { Container } from '../../../components/styled-components/Container';
 import { skillData, skillDataType } from '../../../database/store';
-import { StyledText } from '../../../components/styledComponents/StyledText';
+import { StyledText } from '../../../components/styled-components/StyledText';
 
 export const Skills: React.FC = () => {
   return (
     <StyledSkillsSection>
       <Container>
         <SectionTitle
-          display="flex"
-          justifyContent="center"
           color="rgb(232, 73, 73)"
           fontFamily="Be Vietnam"
           fontSize="20px"
           fontWeight="500"
           lineHeight="29px"
           letterSpacing="0%"
-          textAlign="left">
+          textAlign="center">
           Skills
         </SectionTitle>
-        <FlexWrapper></FlexWrapper>
-        <StyledText
-          display="flex"
-          marginLeft="100px"
-          marginBottom="40px"
-          width="510px"
-          height="30px"
-          color="rgb(129, 128, 128)"
-          fontFamily="Be Vietnam"
-          fontSize="18px"
-          fontWeight="400"
-          lineHeight="26px"
-          letterSpacing="0%"
-          textAlign="left">
-          I have a vast experience in the following web technologies:
-        </StyledText>
-        <FlexWrapper justifyContent="space-between" padding="0 100px">
+        <FlexWrapper justifyContent="space-between">
           <Skill skillData={skillData as skillDataType[]} />
           <svg
             width="511.000000"
@@ -300,4 +282,6 @@ interface IStyledSkillsSection {
   padding?: string;
 }
 
-const StyledSkillsSection: any = styled.section<IStyledSkillsSection>``;
+const StyledSkillsSection: any = styled.section<IStyledSkillsSection>`
+  background: rgb(245, 245, 245);
+`;

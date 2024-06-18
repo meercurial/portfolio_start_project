@@ -26,7 +26,7 @@ interface IStyledText {
   paddingLeft?: string;
 }
 
-export const StyledText: any = styled.span<IStyledText>`
+export const StyledText: any = styled.p<IStyledText>`
   position: ${({ position }) => position};
   width: ${({ width }) => width};
   height: ${({ height }) => height};

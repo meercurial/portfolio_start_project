@@ -1,19 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FlexWrapper } from '../../../components/styledComponents/FlexWrapper';
-import { SectionTitle } from '../../../components/styledComponents/SectionTitle';
-import { Container } from '../../../components/styledComponents/Container';
-import { StyledBtn } from '../../../components/styledComponents/StyledBtn';
-import { Icon } from '../../../components/Icon';
+import { FlexWrapper } from '../../../components/styled-components/FlexWrapper';
+import { SectionTitle } from '../../../components/styled-components/SectionTitle';
+import { Container } from '../../../components/styled-components/Container';
+import { StyledBtn } from '../../../components/styled-components/StyledBtn';
+import { Icon } from '../../../components/Icon/Icon';
+import { StyledTextArea } from '../../../components/styled-components/StyledTextArea';
+import { StyledForm } from '../../../components/styled-components/StyledForm';
+import { StyledInput } from '../../../components/styled-components/StyledInput';
 
 export const ContactMe: React.FC = () => {
   return (
     <StyledContactMeSection>
       <Container>
-        <SectionTitle display="flex" justifyContent="center" marginTop="75px" marginBottom="30px">
+        <SectionTitle textAlign="center" marginTop="75px" marginBottom="30px">
           Contact me
         </SectionTitle>
-        <FlexWrapper justifyContent="space-between" padding="0 100px">
+        <FlexWrapper justifyContent="space-between">
           <svg
             width="563.000000"
             height="412.000000"
@@ -302,7 +305,7 @@ export const ContactMe: React.FC = () => {
               borderRadius="4px"
               boxShadow="0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 2px 1px 0px rgba(0, 0, 0, 0.12),0px 1px 1px 0px rgba(0, 0, 0, 0.14)"
               background="rgb(255, 255, 255)"></StyledInput>
-            <StyledInput
+            <StyledTextArea
               position="static"
               placeholder="Enter message..."
               width="615px"
@@ -321,7 +324,7 @@ export const ContactMe: React.FC = () => {
               border="1px solid rgba(0,0,0,0.25)"
               borderRadius="4px"
               boxShadow="0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 2px 1px 0px rgba(0, 0, 0, 0.12),0px 1px 1px 0px rgba(0, 0, 0, 0.14)"
-              background="rgb(255, 255, 255)"></StyledInput>
+              background="rgb(255, 255, 255)"></StyledTextArea>
             <StyledBtn
               type="submit"
               cursor="pointer"
@@ -376,51 +379,8 @@ interface IStyledContactMeSection {
 }
 
 const StyledContactMeSection: any = styled.section<IStyledContactMeSection>`
+  background: rgb(245, 245, 245);
   position: ${({ position }) => position};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
-`;
-
-const StyledForm: any = styled.form``;
-
-interface IStyledInput {
-  position?: string;
-  width?: string;
-  height?: string;
-  display?: string;
-  flexDirection?: string;
-  justifyContent?: string;
-  alignItems?: string;
-  padding?: string;
-  flex?: string;
-  order?: string;
-  alignSelf?: string;
-  flexGrow?: string;
-  margin?: string;
-  boxSizing?: string;
-  border?: string;
-  borderRadius?: string;
-  boxShadow?: string;
-  background?: string;
-}
-
-const StyledInput = styled.input<IStyledInput>`
-  position: ${({ position }) => position};
-  width: ${({ width }) => width};
-  height: ${({ height }) => height};
-  display: ${({ display }) => display};
-  flex-direction: ${({ flexDirection }) => flexDirection};
-  justify-content: ${({ justifyContent }) => justifyContent};
-  align-items: ${({ alignItems }) => alignItems};
-  padding: ${({ padding }) => padding};
-  flex: ${({ flex }) => flex};
-  order: ${({ order }) => order};
-  align-self: ${({ alignSelf }) => alignSelf};
-  flex-grow: ${({ flexGrow }) => flexGrow};
-  margin: ${({ margin }) => margin};
-  box-sizing: ${({ boxSizing }) => boxSizing};
-  border: ${({ border }) => border};
-  border-radius: ${({ borderRadius }) => borderRadius};
-  box-shadow: ${({ boxShadow }) => boxShadow};
-  background: ${({ background }) => background};
 `;

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { theme } from './Theme';
+import bg_wave from '../assets/wave.svg';
 
 export const GlobalStyle = createGlobalStyle`
 *, 
@@ -39,7 +40,7 @@ body {
  }
 
  footer {
-  background-color: ${theme.colors.footerBg}
+  background-image: url(${bg_wave});
  }
 
 `;
