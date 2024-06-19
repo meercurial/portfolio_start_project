@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {menuTitle} from '../../database/store';
-import {Icon} from '../Icon/Icon';
+import {Icon} from '../icon/Icon';
 import {StyleLinkContainer} from '../styled-components/StyledLinkContainer';
 import {StyledTextBtn} from '../styled-components/StyledTextBtn';
 

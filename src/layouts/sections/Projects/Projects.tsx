@@ -5,8 +5,8 @@ import { FlexWrapper } from '../../../components/styled-components/FlexWrapper';
 import { Container } from '../../../components/styled-components/Container';
 import { StyledText } from '../../../components/styled-components/StyledText';
 import { projectData, projectDataType } from '../../../database/store';
-import { ProjectCard } from './ProjectCard/ProjectCard';
-import { Icon } from '../../../components/Icon/Icon';
+import { Icon } from '../../../components/icon/Icon';
+import { ProjectCard } from './project-card/ProjectCard';
 
 export const Projects: React.FC = () => {
   return (
@@ -37,8 +37,8 @@ export const Projects: React.FC = () => {
             fontWeight="400"
             lineHeight="26px"
             letterSpacing="0%"
-            textAlign="left">
-            A select number of projects.
+            textAlign="center">
+            A select number of projects
           </StyledText>
         </FlexWrapper>
         <ProjectCard projectData={projectData as projectDataType[]} />
@@ -48,5 +48,6 @@ export const Projects: React.FC = () => {
 };
 
 const StyledProjects: any = styled.section`
+  display: flex;
   background: rgb(52, 61, 104);
 `;

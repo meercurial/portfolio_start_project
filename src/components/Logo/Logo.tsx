@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Icon } from '../Icon/Icon';
+import { Icon } from '../icon/Icon';
 
 export const Logo: React.FC = () => {
   return (

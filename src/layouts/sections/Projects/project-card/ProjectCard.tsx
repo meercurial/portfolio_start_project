@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '../../../../components/Image/Image';
+import { Image } from '../../../../components/image/Image';
 import { StyledBtn } from '../../../../components/styled-components/StyledBtn';
 import { FlexWrapper } from '../../../../components/styled-components/FlexWrapper';
 import { StyledTextBtn } from '../../../../components/styled-components/StyledTextBtn';

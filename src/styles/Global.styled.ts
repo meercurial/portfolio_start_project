@@ -33,6 +33,10 @@ export const GlobalStyle = createGlobalStyle`
         border: none;
     }
 
+    section {
+        padding: 100px 0;
+    }
+    
     header {
         background-color: ${theme.colors.headerBg}
     }
@@ -43,6 +47,7 @@ export const GlobalStyle = createGlobalStyle`
 
     footer {
         background-image: url(${bg_wave});
+        padding: 105px 0px;
     }
 
 `;

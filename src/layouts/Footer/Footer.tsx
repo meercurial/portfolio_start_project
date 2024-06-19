@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Socials } from './Socials/Socials';
-import { GitComponent } from './GitComponent/GitComponent';
 import { Container } from '../../components/styled-components/Container';
 import { FlexWrapper } from '../../components/styled-components/FlexWrapper';
+import { Socials } from './socials/Socials';
+import { GitComponent } from './git-component/GitComponent';
 
 export const Footer: React.FC = () => {
   return (

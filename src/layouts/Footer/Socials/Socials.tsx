@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledText } from '../../../components/styled-components/StyledText';
-import { SocialMediaCard } from './SocialMediaCard/SocialMediaCard';
 import { socialsData, socialsDataType } from '../../../database/store';
+import { SocialMediaCard } from './socialMediaCard/SocialMediaCard';
 
 export const Socials: React.FC = () => {
   return (

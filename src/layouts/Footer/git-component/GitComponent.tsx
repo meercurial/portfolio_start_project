@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlexWrapper } from '../../../components/styled-components/FlexWrapper';
 import { StyledText } from '../../../components/styled-components/StyledText';
-import { Icon } from '../../../components/Icon/Icon';
+import { Icon } from '../../../components/icon/Icon';
 import styled from 'styled-components';
 
 export const GitComponent = () => {

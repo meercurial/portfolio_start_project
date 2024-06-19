@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlexWrapper } from '../../../../components/styled-components/FlexWrapper';
-import { Icon } from '../../../../components/Icon/Icon';
+import { Icon } from '../../../../components/icon/Icon';
 
 interface ISocialsDataProps {
   socialsData: Array<{ iconId: string }>;
