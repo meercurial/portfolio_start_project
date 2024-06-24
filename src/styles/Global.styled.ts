@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
 
     footer {
         background-image: url(${bg_wave});
-        padding: 105px 0px;
+        padding: 125px 0px;
     }
 
 `;

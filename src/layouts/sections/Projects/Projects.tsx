@@ -4,11 +4,14 @@ import { SectionTitle } from '../../../components/styled-components/SectionTitle
 import { FlexWrapper } from '../../../components/styled-components/FlexWrapper';
 import { Container } from '../../../components/styled-components/Container';
 import { StyledText } from '../../../components/styled-components/StyledText';
-import { projectData, projectDataType } from '../../../database/store';
+import { projectData } from '../../../database/store';
 import { Icon } from '../../../components/icon/Icon';
 import { ProjectCard } from './project-card/ProjectCard';
 
 export const Projects: React.FC = () => {
+  const mapProjectData = projectData.map((obj, i) => {
+    return <ProjectCard src={obj.src} alt={obj.alt} projectText={obj.projectText} />;
+  });
   return (
     <StyledProjects>
       <Container>
@@ -40,8 +43,8 @@ export const Projects: React.FC = () => {
             textAlign="center">
             A select number of projects
           </StyledText>
+          <>{mapProjectData}</>
         </FlexWrapper>
-        <ProjectCard projectData={projectData as projectDataType[]} />
       </Container>
     </StyledProjects>
   );
