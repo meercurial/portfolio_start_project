@@ -1,0 +1,12 @@
+<svg width="64.951904" height="73.762329" viewBox="0 0 64.9519 73.7623" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="64.618835" y1="74.381149" x2="0.715721" y2="-0.618809" id="paint_linear_1_4699_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0D54BE"/>
+			<stop offset="1.000000" stop-color="#20ECD3"/>
+		</linearGradient>
+	</defs>
+	<path id="Polygon 1" d="M2 16.97C0.76 17.69 0 19.01 0 20.44L0 53.32C0 54.75 0.76 56.07 2 56.78L30.47 73.22C31.71 73.94 33.23 73.94 34.47 73.22L62.95 56.78C64.18 56.07 64.95 54.75 64.95 53.32L64.95 20.44C64.95 19.01 64.18 17.69 62.95 16.97L34.47 0.53C33.23 -0.18 31.71 -0.18 30.47 0.53L2 16.97ZM3 18.7C2.38 19.06 2 19.72 2 20.44L2 53.32C2 54.03 2.38 54.69 3 55.05L31.47 71.49C32.09 71.85 32.85 71.85 33.47 71.49L61.95 55.05C62.57 54.69 62.95 54.03 62.95 53.32L62.95 20.44C62.95 19.72 62.57 19.06 61.95 18.7L33.47 2.26C32.85 1.91 32.09 1.91 31.47 2.26L3 18.7Z" fill="url(#paint_linear_1_4699_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

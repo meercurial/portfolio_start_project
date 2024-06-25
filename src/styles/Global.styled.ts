@@ -43,6 +43,10 @@ export const GlobalStyle = createGlobalStyle`
 
     main {
         background-color: ${theme.colors.mainBg}
+
+     & ::before {
+        
+      }
     }
 
     footer {

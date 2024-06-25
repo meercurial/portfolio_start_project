@@ -14,30 +14,30 @@ export const skillData: skillDataType[] = [
   {
     iconId: 'css-icon',
     skillTitleText: 'CSS3',
-    width: '52.173889',
-    height: '52.173889',
-    viewBox: '0 0 52.1739 52.1739',
+    width: '39',
+    height: '39',
+    viewBox: '0 0 39 39',
   },
   {
     iconId: 'HTML5-icon',
     skillTitleText: 'HTML 5',
-    width: '43.695679',
-    height: '43.695679',
-    viewBox: '0 0 43.6957 43.6957',
+    width: '39',
+    height: '39',
+    viewBox: '0 0 39 39',
   },
   {
     iconId: 'JS',
     skillTitleText: 'Java Script',
-    width: '44.491516',
-    height: '49.562073',
-    viewBox: '0 0 44.4915 49.5621',
+    width: '39',
+    height: '39',
+    viewBox: '0 0 39 39',
   },
   {
     iconId: 'bootstrap-icon',
     skillTitleText: 'Bootstrap',
-    width: '39.130432',
-    height: '39.130432',
-    viewBox: '0 0 39.1304 39.1304',
+    width: '39',
+    height: '39',
+    viewBox: '0 0 39 39',
   },
 ];
 
@@ -99,5 +99,3 @@ export const socialsData: socialsDataType[] = [
   { iconId: 'twitter-icon' },
   { iconId: 'gmail-icon' },
 ];
-
-

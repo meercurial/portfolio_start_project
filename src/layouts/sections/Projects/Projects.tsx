@@ -10,7 +10,7 @@ import { ProjectCard } from './project-card/ProjectCard';
 
 export const Projects: React.FC = () => {
   const mapProjectData = projectData.map((obj, i) => {
-    return <ProjectCard src={obj.src} alt={obj.alt} projectText={obj.projectText} />;
+    return <ProjectCard key={i} src={obj.src} alt={obj.alt} projectText={obj.projectText} />;
   });
   return (
     <StyledProjects>
@@ -43,14 +43,22 @@ export const Projects: React.FC = () => {
             textAlign="center">
             A select number of projects
           </StyledText>
-          <>{mapProjectData}</>
+          <ProjectCardContainer>{mapProjectData}</ProjectCardContainer>
         </FlexWrapper>
       </Container>
     </StyledProjects>
   );
 };
 
-const StyledProjects: any = styled.section`
+const ProjectCardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 55px;
+`;
+
+const StyledProjects = styled.section`
   display: flex;
   background: rgb(52, 61, 104);
 `;
+
